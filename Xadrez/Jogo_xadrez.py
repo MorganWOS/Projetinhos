@@ -83,7 +83,6 @@ while termino == False:
             escolhe_peça = input("Escolha a peça ou casa: ")
             print(tab.posições[escolhe_peça])
             if tab.posições[escolhe_peça] == 'Peão':
-                #jogadas_disponiveis = [i for i in tab.posições.keys() if i[0] == escolhe_peça[0] and int(i[1]) == (int(escolhe_peça[1]) + 1)]
                 print(pe.mostra_jogadas_disponiveis(tab.posições[escolhe_peça], tab.posições, escolhe_peça))
             escolhe_jogada = input("Escolha a casa para qual quer se movimentar: ")
             faz_jogada(tab.posições, escolhe_peça, escolhe_jogada, tab.posições[escolhe_peça])
